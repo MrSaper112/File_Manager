@@ -1,0 +1,8 @@
+<body>
+    {{> side}}
+    <h1>Upload</h1>
+    <form enctype="multipart/form-data" method="POST" action="/handleUpload">
+        <input type="file" multiple required accept="*/*" name="imageupload">
+        <input type="submit" value="sendFile" name="sendFile">
+    </form>
+</body>
