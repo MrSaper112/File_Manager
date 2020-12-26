@@ -88,7 +88,7 @@ app.post('/handleUpload', function (req, res) {
     let form = formidable({});
     form.keepExtensions = true
     form.multiples = true
-    form.uploadDir = __dirname + '../static/upload/'
+    form.uploadDir = __dirname + '/static/upload/'
     form.parse(req, function (err, fields, files) {
         console.log("----- przesłane formularzem pliki ------");
         if (typeof files.imageupload == "undefined") {
