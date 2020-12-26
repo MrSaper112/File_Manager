@@ -1,6 +1,6 @@
 var express = require("express")
 var app = express()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 80
 var path = require("path")
 var hbs = require('express-handlebars');
 var bodyParser = require("body-parser");
@@ -11,6 +11,7 @@ var listOfItems = {
 
     ]
 }
+//LOKALNIE
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/static')));
