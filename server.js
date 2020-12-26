@@ -1,6 +1,6 @@
 var express = require("express")
 var app = express()
-const PORT = process.env.PORT || 80
+const PORT = process.env.PORT
 var path = require("path")
 var hbs = require('express-handlebars');
 var bodyParser = require("body-parser");
